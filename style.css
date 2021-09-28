@@ -1,0 +1,88 @@
+h1 {
+font-size: x-large;
+text-align: center;
+color: white;
+text-shadow: white 2px 2px 7px;
+border: white solid 2px;
+}
+
+h1:hover {
+    font-size: x-large;
+    text-transform: uppercase;
+    border: white dashed 4px;
+    }
+
+body{
+    background-color: black;
+}
+
+.balls {
+    display: flex;   
+    flex-direction: column;
+    align-items: center; 
+    
+}
+
+
+#first {
+    background-color: #00ffff;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    animation: bounce1 1.5s infinite;
+    animation-timing-function: linear;
+}
+
+#second {
+    background-color: #32e932;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    animation: bounce2 1.5s infinite;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+    }
+
+#third {
+    background-color: #7362df;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    animation: bounce3 1.5s infinite;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    }
+
+    #first:hover{
+        animation: a;
+    }
+    #second:hover{
+        animation: b;
+    }
+    #third:hover{
+        animation: c;
+    }
+
+@keyframes bounce1 {    
+    0%{left: 0px;}
+    25%{left: 45%; height: 210px; width: 100px; background-color: #0060ce; border-radius: 50%;}
+    50%{left:0px; height: 200px; width: 200px; background-color: #00ffff; border-radius: 0;}
+    75%{left: -45%; height: 210px; width: 100px; background-color: #0060ce; border-radius: 50%;}
+    100%{left: 0px;}
+}
+
+@keyframes bounce2 {    
+    0%{left: 0px;}
+    25%{left: -45%; height: 210px; width: 100px; background-color: #efff0a; border-radius: 50%;}
+    50%{left:0px; height: 200px; width: 200px; background-color: #32e932; border-radius: 0;}
+    75%{left: 45%; height: 210px; width: 100px; background-color: #efff0a; border-radius: 50%;}
+    100%{left: 0px;}
+}
+
+@keyframes bounce3 {    
+    0%{left: 0px;}
+    25%{left: 45%; height: 210px; width: 150px; background-color: #ff1010; border-radius: 50%;}
+    50%{left:0px; height: 200px; width: 200px; background-color: #7362df; border-radius: 0;}
+    75%{left: -45%; height: 210px; width: 150px; background-color: #ff1010; border-radius: 50%;}
+    100%{left: 0px;}
+}
