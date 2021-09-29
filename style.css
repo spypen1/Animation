@@ -55,12 +55,15 @@ body{
 
     #first:hover{
         animation: a;
+        animation-delay: 1s;
     }
     #second:hover{
         animation: b;
+        animation-delay: 1s;
     }
     #third:hover{
         animation: c;
+        animation-delay: 1s;
     }
 
 @keyframes bounce1 {    
